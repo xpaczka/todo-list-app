@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <script src="./src/js/controller.js" type="module"></script>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="app-top-wrapper">
+        <div class="app-top-container">
+          <div class="app-date">10th Sep 2022</div>
+          <h1>Todo List App</h1>
+          <form class="todo-input-container">
+            <input type="text" class="todo-input" placeholder="What are you planning to do?" />
+            <div class="app-top-submit">
+              <input type="date" class="todo-date" />
+              <button type="submit" class="todo-submit">&plus;</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="app-list-wrapper">
+        <div class="app-list-container"></div>
+      </div>
+      <div class="app-error hidden">Input is empty</div>
+    </div>
+  </body>
+</html>
